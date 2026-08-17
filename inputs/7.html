@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <h1>Sign-Up Form</h1>
+    <form>
+        <!-- Personal Information Fieldset -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+        <br>
+
+        <!-- Preferences Fieldset -->
+        <fieldset>
+            <legend>Preferences</legend>
+            <p>Gender:</p>
+            <label>
+                <input type="radio" name="gender" value="male" required> Male
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="female" required> Female
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="other" required> Other
+            </label>
+            <br><br>
+
+            <p>Interests:</p>
+            <label>
+                <input type="checkbox" name="interests" value="sports"> Sports
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="interests" value="music"> Music
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="interests" value="technology"> Technology
+            </label>
+        </fieldset>
+        <br>
+
+        <!-- Location Fieldset -->
+        <fieldset>
+            <legend>Location</legend>
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="australia">Australia</option>
+                <option value="india">India</option>
+            </select>
+        </fieldset>
+        <br>
+
+        <!-- Additional Information Fieldset -->
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="comments">Comments:</label>
+            <br>
+            <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Write your comments here..."></textarea>
+        </fieldset>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
