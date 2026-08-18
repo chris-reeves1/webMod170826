@@ -1,0 +1,34 @@
+
+/* element selector */
+
+p {
+    color: #FF0000;
+}
+
+/* class selector */
+
+.intro {
+    color: #3498DB;
+    font-weight: 700;
+}
+
+/* id selector */
+
+#main-title {
+    color: #2ECC71;
+    margin-bottom: 0;
+}
+
+.note {
+    color: #F1C40F;
+    font-style: italic;
+}
+
+
+.btn {
+    background: #E74C3C;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+}

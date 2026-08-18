@@ -1,0 +1,46 @@
+:root {
+    --bg: #1ABC9C;
+    --card: #F39C12;
+    --text:#2C3E50;
+    --muted:#95A5A6;
+    --accent: hsl(340, 80%, 60%); /* Random pink accent */
+}
+
+body {
+    background: var(--bg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    margin: 0;
+}
+
+.page {
+    padding: 40px 16px;
+}
+
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--card);
+    padding: 20px 22px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--accent);
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.link {
+    color: var(--accent);
+}

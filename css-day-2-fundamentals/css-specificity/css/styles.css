@@ -1,0 +1,20 @@
+p {
+    color: green;
+}
+
+p.intro {
+    color: brown;
+}
+
+p.note {
+    color: blue;
+}
+
+#main-title {
+    color: orange;
+}
+
+/* inline higher specificity 
+
+
+element < class / combined selector < id < inline */

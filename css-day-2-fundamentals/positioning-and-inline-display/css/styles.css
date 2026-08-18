@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #8E44AD;
+}
+
+.page {
+    padding: 40px 16px;
+}
+
+.card {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #F39C12;
+    padding: 20px 22px;
+    border-radius: 10px;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #E74C3C;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+
+.pill{
+    display:  inline-block;
+    background: #3498DB;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 999px;
+    margin-right: 8px;
+
+}
