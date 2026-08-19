@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>DOM event demos</h1>
+
+        <hr>
+
+        <section class="panel">
+            <h2 id="d1-title">DEMO 1 - Change text on click</h2>
+            <p id="d1-output">Original text</p>
+            <button id="d1-btn">Change text</button>
+
+        </section>
+
+        <hr>
+
+        <section class="panel">
+            <h2>DEMO2 - READ VALIDATE RETURN</h2>
+
+            <label for="d2-a">first number (a)</label>
+            <input id="d2-a" type="text" inputmode="numeric" placeholder="eg; 10">  
+
+            <label for="d2-b">second number (b)</label>
+            <input id="d2-b" type="text" inputmode="numeric" placeholder="eg; 10">
+
+            <button id="d2-add" type="button">ADD</button>
+
+            <p id="d2-result">Result will be shown here</p>
+
+
+        </section>
+
+        <hr>
+
+        <section class="panel">
+            <h2>DEMO3 - input event</h2>
+
+            <label for="d3-text">type here...</label>
+            <input id="d3-text" type="text" placeholder="start typing here">
+
+            <p>Live Text: <span id="d3-live">(empty)</span></p> 
+
+        </section>
+
+
+        <hr>
+            <section class="panel">
+                <h2>DEMO 4 - devent delegation/bubbling</h2>
+
+                <div id="d4-pad" class="pad">
+                    <button type="button" data-op="+">+</button>
+                    <button type="button" data-op="-">-</button>
+                    <button type="button" data-op="*">*</button>
+                    <button type="button" data-op="/">/</button>
+                    <button type="button" data-op="//">//</button>
+                    <button type="button" data-op="%"><span>%</span></button>
+
+                </div>
+                <p id="d4-out">Click a button</p>
+
+
+
+
+            </section>
+
+        <hr>
+
+        <section class="panel">
+            <h2>DEMO 5 - Create and append list items</h2>
+
+            <label for="d5-text">New item</label>
+            <input id="d5-text" type="text" placeholder="Enter an item">
+            <button id="d5-add" type="button">Add item</button>
+
+            <ul id="d5-list"></ul>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    
+</body>
+</html>

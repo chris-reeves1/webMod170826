@@ -1,0 +1,195 @@
+# Day 3 Project — Customer Orders Dashboard
+
+## The Challenge
+
+Main task is to connect your existing interface to the supplied JavaScript data:
+
+* **Customers**
+* **Orders**
+* **Order Details**
+
+The relationship is:
+
+```
+Customer
+   ↓
+Customer Orders
+   ↓
+Selected Order Details
+```
+
+## Starting Behaviour
+
+When the page first loads:
+
+* show all customers;
+* leave Orders empty until a customer is selected;
+* leave Order Details empty until an order is selected;
+* show appropriate prompts such as “Select a customer” or “Select an order”.
+
+## Part 1 — Connect to the Page
+
+Use the existing HTML IDs to access the elements you need, including:
+
+* search input;
+* customer, order and detail table bodies;
+* selected customer/order labels;
+* counter;
+* reset button;
+* status message.
+
+You should not need to redesign the HTML.
+
+## Part 2 — Render Customers
+
+Use the supplied customer data to generate the Customers table with JavaScript.
+
+Display:
+
+* Customer ID
+* Company name
+* Country
+
+Remove or replace the existing dummy rows.
+
+## Part 3 — Search Customers
+
+Make the search box filter the displayed customers.
+
+Allow searching by:
+
+* ID;
+* company name;
+* country.
+
+Update the customer counter when the results change.
+
+## Part 4 — Select a Customer
+
+Make customer rows clickable.
+
+When a customer is selected:
+
+1. identify their Customer ID;
+2. update the selected-customer label;
+3. filter the Orders data using that ID;
+4. display only that customer’s orders;
+5. clear any previously selected order/details.
+
+```
+Customer ID
+    ↓
+filter Orders
+    ↓
+matching orders
+```
+
+If there are no orders, show a suitable message.
+
+## Part 5 — Select an Order
+
+Make order rows clickable.
+
+When an order is selected:
+
+1. identify its Order ID;
+2. update the selected-order label;
+3. filter Order Details using that ID;
+4. display the matching line items.
+
+Display:
+
+* product;
+* quantity;
+* unit price;
+* line total.
+
+```
+Order ID
+   ↓
+filter Order Details
+   ↓
+matching line items
+```
+
+## Part 6 — Calculate the Total
+
+Calculate each line total using the supplied price, quantity and discount values.
+
+Add the line totals together and display the final **Order Total**.
+
+## Part 7 — Reset
+
+The Reset button should:
+
+* clear the search;
+* clear customer and order selections;
+* show all customers again;
+* clear Orders;
+* clear Order Details;
+* reset labels/messages.
+
+## Minimum Completion Criteria
+
+Your finished dashboard should allow the user to:
+
+```
+Search customers
+      ↓
+Select customer
+      ↓
+View their orders
+      ↓
+Select order
+      ↓
+View order details
+      ↓
+See order total
+```
+
+The Reset button should return the application to its starting state.
+
+## Build It Incrementally
+
+Do not try to build everything at once.
+
+Work through it in this order:
+
+1. Display customers.
+2. Filter customers.
+3. Detect a customer click.
+4. Display that customer’s orders.
+5. Detect an order click.
+6. Display the order details.
+7. Calculate the total.
+8. Add reset behaviour.
+
+Test each stage before moving on.
+
+Use the browser **Console** when debugging.
+
+## You May Use
+
+You may use:
+
+* today’s demonstrations;
+* previous course material;
+* documentation and search;
+* AI tools.
+
+If you use AI, make sure you can still explain the main flow of your application.
+
+## Stretch Challenges
+
+If you finish early, try one or more:
+
+* highlight the selected customer/order;
+* add extra filters;
+* load the data from JSON using `fetch()`;
+* add your own justified improvement.
+
+
+## Finished?
+
+When the required functionality works, submit your completed project.
+
